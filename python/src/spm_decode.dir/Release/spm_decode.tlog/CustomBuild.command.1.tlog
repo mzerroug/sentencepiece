@@ -1,0 +1,10 @@
+^C:\USERS\MAHAA\ONEDRIVE - UM5.AC.MA\BUREAU\LML\SENTENCEPIECE\SRC\CMAKELISTS.TXT
+setlocal
+C:\Python312\Lib\site-packages\cmake\data\bin\cmake.exe "-SC:/Users/mahaa/OneDrive - um5.ac.ma/Bureau/LML/sentencepiece" "-BC:/Users/mahaa/OneDrive - um5.ac.ma/Bureau/LML/sentencepiece/python" --check-stamp-file "C:/Users/mahaa/OneDrive - um5.ac.ma/Bureau/LML/sentencepiece/python/src/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
